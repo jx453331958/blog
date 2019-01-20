@@ -20,6 +20,7 @@
     "hexo-server": "^0.3.1"
   },
   "scripts": {
-    "deploy": "hexo clean && hexo g && hexo d"
+    "deploy": "hexo clean && hexo g && hexo d",
+    "dev": "hexo server"
   }
 }
