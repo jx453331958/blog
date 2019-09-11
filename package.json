@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "lint-staged": "lint-staged"
+  },
   "devDependencies": {
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
@@ -11,7 +14,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,js,tsx,jsx,json,md,html}": [
+    "*.{md}": [
       "prettier --config .prettierrc --write",
       "git add"
     ]
