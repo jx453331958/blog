@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+// ？？？
 void strcpy(char *s, char *t)
 {
   while((*s = *t) != '\0') {
+    printf("%c", *s);
     s++;
     t++;
   }
@@ -10,8 +12,11 @@ void strcpy(char *s, char *t)
 
 int main()
 {
-  char sArr[] = {'t', 'e', 's', 't'};
-  char tArr[1000];
+  // char sArr[] = {'t', 'e', 's', 't'};
+  // char tArr[1000];
+  
+  char sArr[] = "now is the time";
+  char tArr[100];
 
   strcpy(sArr, tArr);
 
