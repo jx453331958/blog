@@ -170,3 +170,13 @@ grep [-acinv] [--color=auto] '查找字符串' filename
 50. col: 将tab替换成空格，将man page转存为纯文本文件以方便查阅。
 51. join: 文件之间数据拼接。在使用join之前，所需要处理的文件应该要事先经过排序处理。
 52. paste: 将两行贴在一起，中间以tab键隔开。
+53. expand: 将tab按键转为空格键
+54. split: 将一个大文件依据文件大小或行数来切割成为小文件
+55. xargs: 产生某个命令的参数。xargs可以读入stdin的数据，并且以空格符或断行字符进行分辨，将stdin的数据分隔成arguments。
+56. 关于减号 - 的作用： 某些命令需要用到文件名来进行处理时，该stdin与stdout可以利用减号“-”来替代。举例：
+
+```shell
+// 将/home里面的文件打包，但打包的数据不是记录到文件，而是传送到stdout;
+// 经过管道后，将tar-cvf-/home 传送给后面的tar-xvf-。后面的这个-则是取用前一个命令的stdout，因此我们就不需要使用文件了。
+tar -cvf - /home | tar -xvf -
+```
