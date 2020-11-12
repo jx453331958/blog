@@ -39,3 +39,32 @@ var mergeTwoLists = function (l1, l2) {
 
   return newList.next;
 };
+
+var mergeTwoLists2 = function(l1, l2) {
+  const newList = {
+      val: -1,
+      next: null
+  }
+
+  const recursion = (list, l1, l2) => {
+      if (!l1 && !l2) return;
+      if (!l1 || !l2) {
+          list.next = l1 || l2;
+          return;
+      }
+
+      let temp = list;
+      if (l1.val < l2.val) {
+          temp.next = l1;
+          l1 = l1.next;
+      }  else {
+          temp.next = l2;
+          l2 = l2.next;
+      }
+      temp = temp.next;
+      recursion(temp, l1, l2);
+  }
+
+  recursion(newList, l1, l2);
+  return newList.next;
+};
