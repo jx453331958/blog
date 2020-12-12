@@ -36,6 +36,9 @@ plugin_header_X-From-Where = frp
 centos使用systemd添加开机自启动frps进程
 
 openwrt使用nohup不挂起进程
+```shell
+nohup frpc -c frpc.ini > /dev/null 2>&1 &
+```
 
 nohup不输出日志信息的方法：https://www.cnblogs.com/jasondan/p/3499175.html
 
