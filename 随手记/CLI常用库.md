@@ -27,3 +27,4 @@
 | [assert](https://www.npmjs.com/package/assert)                                       | 断言测试                                                                                       |
 | [rimraf](https://www.npmjs.com/package/rimraf)                                       | `rm -rf`                                                                                       |
 | [node-mkdirp](https://www.npmjs.com/package/node-mkdirp)                             | `mkdir -p`                                                                                     |
+| [meow](https://www.npmjs.com/package/meow)                                           | CLI app helper                                                                                 |
