@@ -6,4 +6,4 @@ node_modules/
 public/
 .deploy*/
 .vscod
-.idea
+.idea/
